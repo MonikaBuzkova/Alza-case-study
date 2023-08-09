@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1310px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.logo {
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main {
+  background-image: linear-gradient(
+    115deg,
+    rgb(235, 247, 243),
+    rgb(249, 251, 253)
+  );
+  padding: 3rem;
+  border-top: 4px solid rgb(22, 83, 164);
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+p {
+  font-weight: 500;
+}
+
+.links__outer,
+.links__inner {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.links__inner {
+  justify-content: space-around;
+  text-align: center;
+  color: rgb(22, 83, 164);
+  font-size: 0.7rem;
+  text-decoration: underline;
+  padding-top: 5rem;
+}
+
+.links__inner--box {
+  padding: 2rem;
+}
+
+.links__outer--right {
+  flex-basis: 15%;
+  padding: 20px 0px 20px 20px;
+}
+
+.links__outer--left img {
+  height: 170px;
+}
+
+.links__outer--right img {
+  height: 50px;
+}
+
+.arrow__image {
+  height: 35px;
+}
+
+.alzak__picture {
+  position: absolute;
+  display: flex;
+  top: 1%;
+  right: 0%;
+  align-items: center;
+}
+
+.alzak__picture p {
+  width: 90px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: right;
+  transform: rotate(12deg);
+}
+
+.alzak-hand__image {
+  width: 350px;
+}
+
+@media only screen and (max-width: 900px) {
+  .links__inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .alzak__picture {
+    position: relative;
+    padding: 5rem 5rem 2rem 2rem;
+  }
+
+  .links__inner {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .links__inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5rem;
+  }
+}
