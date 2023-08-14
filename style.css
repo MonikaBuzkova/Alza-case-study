@@ -43,10 +43,6 @@ h3 {
   padding-bottom: 120px;
 }
 
-h2:not(:first-child) {
-  padding-top: 300px;
-}
-
 p {
   font-weight: 500;
   line-height: 2rem;
@@ -228,14 +224,36 @@ br {
   }
 }
 
-@media only screen and (min-width: 325px) and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   body {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .links__inner {
+    font-size: 0.9rem;
   }
 
   .links__inner {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .links__inner--box {
+    padding-left: 0px;
+  }
+
+  .alzak__picture--left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  .links__inner {
+    font-size: 1rem;
   }
 }

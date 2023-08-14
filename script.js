@@ -1,13 +1,4 @@
-// "use strict";
-
-// let zaskrolujAlzabox = document.querySelector(".scroll__Alzabox");
-// zaskrolujAlzabox.addEventListener("click", function () {
-//   zaskrolujAlzabox.scrollIntoView({
-//     // block: "start",
-//     behavior: "smooth",
-//     // inline: "start",
-//   });
-// });
+"use strict";
 
 function scrollToSection(targetSectionId) {
   var targetElement = document.getElementById(targetSectionId);
